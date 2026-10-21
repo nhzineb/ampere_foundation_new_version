@@ -14,10 +14,10 @@ explore: sdv_tc_runs_foundation {
   view_name: sdv_tc_runs
 
   # Row-Level Security (Multi-value String Filter (advanced) user attribute)
-  access_filter: {
-    field: sdv_tc_runs.tc_domain
-    user_attribute: allowed_sdv_domains
-  }
+#  access_filter: {
+ #   field: sdv_tc_runs.tc_domain
+ #   user_attribute: allowed_sdv_domains
+ # }
 
   # Dynamic Last-Run Deduplication View (Replaces Rank([Admin_Rank],[TC_Id])=1)
   join: fact_tc_dynamic_last_run {
